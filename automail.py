@@ -39,7 +39,7 @@ with open('emails.csv', 'rU') as csvfile:
 
         message = MIMEMultipart('alternative')  # creates message
 
-        message['Subject'] = "Please Forward This Email to Mikael"  # message subject line
+        message['Subject'] = "A couple quick questions"  # message subject line
 
         html = str(soup)  # soup obj into string
 
@@ -58,10 +58,3 @@ with open('emails.csv', 'rU') as csvfile:
         sleep(3)  # Time delay in seconds after each iteration
 
 smtpObj.quit()  # Disconnect from server
-
-
-
-
-
-
-
